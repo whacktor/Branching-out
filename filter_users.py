@@ -1,9 +1,9 @@
-import json
+import json                                                                                                             #import json-data
 
 
 
 
-def filter_users_by_name(name):
+def filter_users_by_name(name):                                                                                         #function to filter users by their name
     with open("users.json", "r") as file:
         users = json.load(file)
 
@@ -15,7 +15,7 @@ def filter_users_by_name(name):
 
 
 
-def filter_users_by_age(age):
+def filter_users_by_age(age):                                                                                           #function to filter users by their age
     with open ("users.json", "r") as file:
         users = json.load(file)
 
@@ -27,7 +27,7 @@ def filter_users_by_age(age):
 
 
 
-def filter_users_by_email(email):
+def filter_users_by_email(email):                                                                                       #function to filter users by their email
     with open("users.json", "r") as file:
         users = json.load(file)
 
@@ -39,7 +39,7 @@ def filter_users_by_email(email):
 
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":                                                                                              #main-function to seperate filter_options
     filter_option = input("What would you like to filter by? (Currently, name, age and emails are supported): ").strip().lower()
 
     if filter_option == "name":
